@@ -18,21 +18,22 @@
 #
 #csv読み込むよう
 require 'csv'
-
-tables = CSV.read("db/data_sin.csv", headers: true)
-tables.each do |table|
-  if table["ホテル名"]
-    hotel = Hotel.new( 
-                      name: table["ホテル名"],
-                      phone_number: table["電話番号"],
-                      street_address: table["住所"],
-                      summary: "未設定",
-                     )
-    if hotel.save
-      puts "さくせす"
-    else
-      p hotel.errors
-      puts "えらー"
+["data_sin","data_ikeb","data_sibu"].each do |file|
+  tables = CSV.read("db/#{file}.csv", headers: true)
+  tables.each do |table|
+    if table["ホテル名"]
+      hotel = Hotel.new( 
+                        name: table["ホテル名"],
+                        phone_number: table["電話番号"],
+                        street_address: table["住所"],
+                        summary: "未設定",
+                       )
+      if hotel.save
+        puts "さくせす"
+      else
+        p hotel.errors
+        puts "えらー"
+      end
     end
   end
 end
