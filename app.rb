@@ -6,11 +6,24 @@ require './models'
 #hotels
 
 get '/hotel/:id' do
-  return Hotel.find_by(id: params["id"]).to_json
+  response.headers['Access-Control-Allow-Origin'] = '*'
+  hotel = Hotel.find_by(id: params["id"])
+  hotel.access_count += 1
+  hotel.save
+  result = {hotel: hotel}
+  result.merge!({services: hotel.hotel_services})
+  return result.to_json
 end
 
-get '/hotels/:search' do
+get '/hotels' do
   response.headers['Access-Control-Allow-Origin'] = '*'
-  return Hotel.search(params["search"].chomp).to_json
+  hotels = []
+  Hotel.all.each do |hotel|
+    hoge = {}
+    hoge.merge!({hotel: hotel})
+    hoge.merge!({service: hotel.hotel_services})
+    hotels << hoge
+  end
+  return hotels.to_json
 end
 
