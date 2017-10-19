@@ -5,10 +5,11 @@ default: &default
 
 development:
   <<: *default
-  username: postgres
-  password: ""
-  database: lovechoice_dev
-  host: db
+  database: <%= ENV.fetch('DB_NAME') %>
+  username: <%= ENV.fetch('USERNAME') %>
+  password: <%= ENV.fetch('PASSWORD') %>
+  host: <%= ENV.fetch('HOSTNAME') %>
+  port: <%= ENV.fetch('PORT').to_i %>
 
 test:
   <<: *default
