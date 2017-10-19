@@ -1,7 +1,4 @@
-ホテル名,振り番号,電話番号,休憩,,宿泊,,,サービスタイム,ショートタイム,住所,マップURL
-,,,平日,休日,平日,金・祝前日,休日,,,,
-,,,料金,料金,料金,料金,料金,時間,時間,,
-ホテル名,番号,電話,平日,休日,平日,金・祝,旧日,サービス,ショート,住所,マップ
+ホテル名,id,電話番号,休憩(平日),休憩(休日),宿泊(平日),宿泊(休日),宿泊(謎),サービスタイム,ショートタイム,住所
 HOTEL WEST ONE,1,03-5356-7110,"2,000","2,200","3,500","3,500","3,500",-,-,東京都豊島区西池袋1-33-3,"<iframe src=""https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.7532177070884!2d139.70807331437484!3d35.73228733477926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d5ddfcdfed7%3A0x29a9c578ead4b8ec!2z44Ob44OG44OrIOOCpuOCp-OCueODiOODr-ODsw!5e0!3m2!1sja!2sjp!4v1502543918391"" width=""600"" height=""450"" frameborder=""0"" style=""border:0"" allowfullscreen></iframe>"
 キャッスル,2,03-3988-6711,"2,000","2,000","4,000","5,000","5,000",-,-,東京都豊島区池袋2-54-4,"<iframe src=""https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.6872341643184!2d139.70606671437486!3d35.73390983469032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d5f1d631f35%3A0x5bf40f7985850205!2z44CSMTcwLTAwMTQg5p2x5Lqs6YO96LGK5bO25Yy65rGg6KKL77yS5LiB55uu77yV77yU4oiS77yU!5e0!3m2!1sja!2sjp!4v1502544413443"" width=""600"" height=""450"" frameborder=""0"" style=""border:0"" allowfullscreen></iframe>"
 ショコラ,3,03-3971-4567,"2,000","2,500","4,000","6,000","4,000","3,000",-,東京都豊島区東池袋1-37-9,"<iframe src=""https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4580.289180527362!2d139.71091106215752!3d35.73227942568788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7d9065999954ec3c!2zSG90ZWwg44K344On44Kz44Op!5e0!3m2!1sja!2sjp!4v1502542890251"" width=""600"" height=""450"" frameborder=""0"" style=""border:0"" allowfullscreen></iframe>"
