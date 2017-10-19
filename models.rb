@@ -1,8 +1,8 @@
 require 'bundler/setup'
 Bundler.require
 
-config  = YAML.load_file( './database.yml' )
-ActiveRecord::Base.configurations = config
+# config  = YAML.load_file( './database.yml' )
+# ActiveRecord::Base.configurations = config
 # ActiveRecord::Base.establish_connection(config["development"])
 ActiveRecord::Base.establish_connection(
   adapter:  "postgresql",
