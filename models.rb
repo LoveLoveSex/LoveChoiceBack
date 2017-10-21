@@ -1,17 +1,9 @@
 require 'bundler/setup'
 Bundler.require
 
-# config  = YAML.load_file( './database.yml' )
-# ActiveRecord::Base.configurations = config
-# ActiveRecord::Base.establish_connection(config["development"])
-ActiveRecord::Base.establish_connection(
-  adapter:  "postgresql",
-  encoding: "unicode",
-  host:     ENV.fetch('HOSTNAME'),
-  username: ENV.fetch('USERNAME'),
-  password: ENV.fetch('PASSWORD'),
-  database: ENV.fetch('DB_NAME'),
-)
+config  = YAML.load_file( './database.yml' )
+ActiveRecord::Base.configurations = config
+ActiveRecord::Base.establish_connection(config["development"])
 
 Time.zone = "Tokyo"
 ActiveRecord::Base.default_timezone = :local
